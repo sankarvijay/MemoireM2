@@ -1,0 +1,14 @@
+public class CalculateTest { 
+    private Calculate calculation;
+    @Before
+    public void setUp() throws Exception {
+        calculation = new Calculate();
+    }
+    @Test
+    public void testSum() {
+        int result = calculation.sum(0,1);
+        int result2 = calculation.sum(2,1);
+        assertEquals(result,0);
+        assertEquals(result2,3);
+    }
+}
